@@ -1,0 +1,207 @@
+html {
+    color: azure;
+    text-align: center;
+    background: linear-gradient(black,rgb(47, 47, 83)) no-repeat center fixed;
+    background-size: cover;
+}
+nav{
+    position: sticky;
+    width: 100%;
+    height: auto;
+    top:0;
+    background-color: black;
+    z-index: 1;
+}
+/* This is the ul for the navigation bar */
+nav ul{
+    /* removes bullet points */
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+/* This is the class name for the list itmes */
+ nav ul li{
+    text-align:center;
+    background-color: rgb(0, 0, 0);
+    display: flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: auto;
+    width:100%;   
+    margin:auto;
+ }
+/* Navigation links themselves */
+nav ul li a{
+    color: azure;
+    background-color: rgb(4, 16, 26);
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+    text-align:center;
+    width: 90%;
+}
+nav ul li a:hover{
+    color: aquamarine;
+    background-color: rgb(17, 37, 55);
+}
+h1{
+    font-size: 50px;
+}
+#mailLink {
+    color: azure;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(25, 29, 46);
+    width: 80%;
+    margin:auto;
+    height: auto;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+#intro{
+    height: 500px;
+    margin-top: 10px;
+}
+
+#myFace{
+    border-radius: 40px;
+    max-width: fit-content;
+}
+.skills{
+    list-style-type: none;
+    position: relative;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    right: 2%;
+}
+.skills ul{
+    display: inline-flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:auto;   
+    margin:auto;  
+}
+.skills ul li{
+    background-color: #525352;
+    text-align:center;
+    display: inline-flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+    width:160px;   
+    margin:10px;
+    border-radius: 5px;
+    padding: 4px;
+}
+#hidden{
+    display: none;
+    
+}
+
+#mySkills{
+    margin-top: 50px;
+}
+
+
+#myProjects{
+    margin-top: 50px;
+}
+
+#icon{
+    width: 120px;
+    border-radius: 5px;
+}
+
+.skills ul li:hover > #hidden{
+    display: block;
+}
+.skills ul li:hover{
+    height: auto;
+    width:300px;
+}
+
+.skills ul li:hover > #icon{
+    width:290px;
+}
+
+.projects{
+    list-style-type: none;
+    position: relative;
+    width: auto;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    right: 2%;
+    margin-top: 20px;
+}
+.projects ul{
+    display: inline-flex; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width:auto;   
+    margin:auto;  
+}
+.projects ul li{
+    background-color: #525352;
+    text-align:center;
+    display: inline-flex; 
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin:10px;
+    padding: 10px;
+    color: azure;
+    border-radius: 5px;
+}
+.projects ul img{
+    width: 160px;
+    height: 160px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.projects ul img:hover{
+    width: 200px;
+    height:auto;
+}
+#hide{
+    display: none;
+}
+
+.projects ul li:hover > #hide{
+    display: block;
+}
+
+.projects ul li a{
+    color: azure;
+    text-decoration: none;
+}
+#growspace{
+    margin-top: 50px;
+}
+footer{
+    background-color: black;
+    position:fixed;
+    bottom: 0px;
+    width: 101%;
+}
+

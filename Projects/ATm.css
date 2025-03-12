@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+    border-radius: 2.5px;
+}
+
+body {
+    background-color: rgb(30, 22, 14);
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+.container {
+    margin: 10% 10% 0 10%;    
+    width: 600px;
+    background: linear-gradient(180deg, rgba(71,71,71,1) 0%, rgba(167,172,180,1) 100%);    
+    border: 15px solid gray;
+    border-radius: 2%;
+    box-shadow: 0px 5px 15px 10px rgba(0,0,0,0.48);
+    height: fit-content;
+}
+.overhang{
+    background: radial-gradient(circle, rgb(136, 136, 136) 0%, rgb(81, 93, 106)100%);
+    box-shadow: darkblue;
+    padding: 10%;
+    box-shadow: 1px 18px 9px -2px rgba(48, 48, 48, 0.75);
+}
+
+.atm-top {
+    border-top: 50px solid rgb(79, 79, 79);
+    border-left: 48px solid transparent;
+    border-right: 48px solid transparent;
+    height: 0;
+    width: 100%;
+}
+.screen{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: 0 10%;
+    padding: 5%;
+    height: 360px;
+    border-radius: 2.5px;
+    background: radial-gradient(circle, rgba(250,250,250,1) 0%, rgb(166, 205, 250) 100%);
+}
+
+.atm-bottom {
+	border-bottom: 100px solid #555;
+	border-left: 48px solid transparent;
+	border-right: 48px solid transparent;
+	height: 30%;
+	width: 100%;
+
+}
+.user-buttons{
+    display: grid;
+    padding-top: 2%;
+    padding-bottom: 5%;
+    gap: 5%;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+button {
+    border: none;
+    color: rgb(6, 6, 6);
+    padding: 7%;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.atm-base {
+    width: 100%;
+    background: linear-gradient(180deg, rgb(55, 55, 55) 0%, rgb(116, 117, 118) 100%);    
+    box-shadow: 0px 5px 10px 5px rgba(0,0,0,0.48);
+    gap: 10%;
+
+}

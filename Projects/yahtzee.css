@@ -1,0 +1,115 @@
+.dice {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+    height: 150px;
+    font-size: 110px;
+}
+
+.dice div {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border: solid 5px black;
+    margin: 10px;
+    font-size: 50px;
+}
+
+.buttons {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    margin:auto;
+    position:relative;
+}
+
+.buttons button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    margin: 10px;
+    font-size: 20px;
+}
+
+p {
+    text-align: center;
+    margin: 2%;
+}
+
+#scoreboard {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: auto;
+
+}
+
+#scoreNames {
+    list-style-type: none;
+    padding: 5px;
+    margin-left: 20%;
+}
+
+#scoreNames li{
+    padding: 10px;
+}
+
+#myScore {
+    list-style-type: none;
+}
+#myScore li{
+    padding: 10px;
+    border: solid black 1px;
+    text-align: center;
+    margin-right: 15%;
+}
+
+#opponentScore {
+    list-style-type: none;
+}
+
+#opponentScore li{
+    padding: 10px;
+    border: solid black 1px;
+    margin-right: 15%;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    color: red;
+}
+
+h2 {
+    text-align: center;
+}
+
+#overlay{
+    display: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+#overlay button {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 80px;
+    margin: 6px;
+    font-size: 10px;
+}

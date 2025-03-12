@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="yahtzee.css">
+</head>
+<body>
+<h1>Yahtzee!!</h1>
+<p>Roll 5 dice by clicking the roll button, you can then click on any dice you want to keep and click reroll to reroll the others (You can double-click on a dice to de-select it). You may reroll
+    up to 3 times. Once you have used up your dice you can click bank score to save your score. This will prompt you to select a category to save it to.
+    Your opponent will reveal their scores as you bank yours.
+</p>
+<section class="dice">
+    <div id="dice1">0</div>
+    <div id="dice2">0</div>
+    <div id="dice3">0</div>
+    <div id="dice4">0</div>
+    <div id="dice5">0</div>
+</section>
+<br>
+<section class="buttons">
+    <button id="roll">Roll</button>
+    <button id="reroll">Reroll</button>
+    <button id="reset">new game</button>
+    <button id="save">Bank Score</button>
+</section>
+<div id="overlay">
+    <h2>Save Score</h2>
+    <p>Choose a score to save this as</p>
+    <button id="yahtzeeSave">Yahtzee</button>
+    <button id="largeStraightSave">Large Straight</button>
+    <button id="smallStraightSave">Small Straight</button>
+    <button id="fullHouseSave">Full House</button>
+    <button id="fourOfAKindSave">4 of a kind</button>
+    <button id="threeOfAKindSave">3 of a kind</button>
+    <button id="twoPairSave">2 pairs</button>
+    <button id="onePairSave">1 pair</button>
+    <button id="sixesSave">Sixes</button>
+    <button id="fivesSave">Fives</button>
+    <button id="foursSave">Fours</button>
+    <button id="threesSave">Threes</button>
+    <button id="twosSave">Twos</button>
+    <button id="onesSave">Ones</button>
+    <button id="chanceSave">Chance</button>
+</div>
+
+<h2>Scoreboard</h2>
+<section id="scoreboard">
+    <ul id = "scoreNames"> <br>
+        <li>Yahtzee</li>
+        <li>Large Straight</li>
+        <li>Small Straight</li>
+        <li>Full House</li>
+        <li>4 of a kind</li>
+        <li>3 of a kind</li>
+        <li>2 pairs</li>
+        <li>1 pair</li>
+        <li>Sixes</li>
+        <li>Fives</li>
+        <li>Fours</li>
+        <li>Threes</li>
+        <li>Twos</li>
+        <li>Ones</li>
+        <li>Chance</li>
+        <br>
+        <li>Total</li>
+    </ul>
+    <ul id = "myScore"> Your Score
+        <li id="yahtzee">_</li>
+        <li id="largeStraight">_</li>
+        <li id="smallStraight">_</li>
+        <li id="fullHouse">_</li>
+        <li id="fourOfAKind">_</li>
+        <li id="threeOfAKind">_</li>
+        <li id="twoPair">_</li>
+        <li id="onePair">_</li>
+        <li id="sixes">_</li>
+        <li id="fives">_</li>
+        <li id="fours">_</li>
+        <li id="threes">_</li>
+        <li id="twos">_</li>
+        <li id="ones">_</li>
+        <li id="chance">_</li>
+        <br>
+        <li id="total">_</li>
+    </ul>
+    <ul id="opponentScore"> Opponent Score
+        <li id="opYahtzee">_</li>
+        <li id="opLargeStraight">_</li>
+        <li id="opSmallStraight">_</li>
+        <li id="opFullHouse">_</li>
+        <li id="opFourOfAKind">_</li>
+        <li id="opThreeOfAKind">_</li>
+        <li id="opTwoPair">_</li>
+        <li id="opOnePair">_</li>
+        <li id="opSixes">_</li>
+        <li id="opFives">_</li>
+        <li id="opFours">_</li>
+        <li id="opThrees">_</li>
+        <li id="opTwos">_</li>
+        <li id="opOnes">_</li>
+        <li id="opChance">_</li>
+        <br>
+        <li id="opTotal">_</li>
+    </ul>
+
+</section>
+
+    <script src="yahtzee.js"></script>
+</body>
+</html>
