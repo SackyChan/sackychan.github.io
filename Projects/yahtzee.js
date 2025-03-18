@@ -188,7 +188,7 @@ function isSmallStraight() {
         document.getElementById('smallStraight').innerHTML = 0;
     }
     if (Math.floor(Math.random() * 10) + 1 <= 6) {
-        document.getElementById('opSmallStraight').innerHTML = 25;
+        document.getElementById('opSmallStraight').innerHTML = 30;
         opTotal += 25
     } else {
         document.getElementById('opSmallStraight').innerHTML = 0;
@@ -274,7 +274,7 @@ function isThreeKind() {
     } else {
         document.getElementById('threeOfAKind').innerHTML = 0;
     }
-    if (Math.floor(Math.random() * 10) + 1 <= 7) {
+    if (Math.floor(Math.random() * 10) + 1 <= 8) {
         document.getElementById('opThreeOfAKind').innerHTML = opSum + ((Math.floor(Math.random() * 6) + 1) * 2);
         opTotal += opSum + ((Math.floor(Math.random() * 6) + 1) * 2);
     } else {
@@ -303,7 +303,7 @@ function isTwoPair() {
     } else {
         document.getElementById('twoPair').innerHTML = 0;
     }
-    if (Math.floor(Math.random() * 10) + 1 <= 7) {
+    if (Math.floor(Math.random() * 10) + 1 <= 9) {
         document.getElementById('opTwoPair').innerHTML = opPair + opPairSec + (Math.floor(Math.random() * 6) + 1);
         opTotal += opPair + opPairSec + (Math.floor(Math.random() * 6) + 1);
     } else {
@@ -331,7 +331,7 @@ function isPair() {
     } else {
         document.getElementById('onePair').innerHTML = 0;
     }
-    if (Math.floor(Math.random() * 10) + 1 <= 9) {
+    if (Math.floor(Math.random() * 100) + 1 <= 99) {
         document.getElementById('opOnePair').innerHTML = opSum + ((Math.floor(Math.random() * 6) + 1) * 3);
         opTotal += opSum + ((Math.floor(Math.random() * 6) + 1) * 3);
     } else {
