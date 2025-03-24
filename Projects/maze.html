@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maze</title>
+    <link rel="stylesheet" href="maze.css">
+</head>
+<body>
+    <div id="container">
+        <div id="messageContainer" style = "visibility:hidden;">
+            <div id="message">
+                <h1>Congratulations, you solved the maze!</h1>
+                <p id="moves"></p>
+                <input id="okBtn" type="button" onclick="toggleVisibility('messageContainer')" value="Nice!" />
+            </div>
+        </div>
+
+        <br>
+        <div id="menu">
+            <div class="difficultySetting">
+                <select id="difficulty">
+                    <option value="10">Easy</option>
+                    <option value="15">Normal</option>
+                    <option value="25">Hard</option>
+                    <option value="38">Extreme</option>
+                </select>
+            </div>
+        
+            <input id="startBtn" type="button" value="Start Game" />
+        </div>
+
+        <div id="view">
+            <div id="mazeContainer">
+                <canvas id="mazeCanvas" class="border" height="1500" width="1500"></canvas>
+            </div>
+        </div>
+
+        <p id="instructions">Use the arrow keys to move the ghost to the portal. Good luck!</p>
+
+    </div>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.18/jquery.touchswipe.min.js"></script>
+    <script type="text/javascript" src="./maze.js"></script>
+</body>
+</html>

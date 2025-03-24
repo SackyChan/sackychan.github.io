@@ -1,6 +1,6 @@
 const pokeCount = 1025;
 var pokedex = {}; // {1 : {"name": "Bulbasaur", "img" : url, "type" : ["grass", "poison"], "abilities" : ["overgrow", "chlorophyll"], "desc" : "..."}}
-
+let currentId = 1;
 window.onload = async function(){
     for (let i = 1; i <= pokeCount; i++){
         await getPokemon(i);
@@ -78,4 +78,50 @@ function updateMon(){
     document.getElementById("description").innerText = pokedex[this.id]["desc"];
 }
 
+function nextMon(){
+    if(currentId == 1025){
+        currentId = 1;
+    }
+    else{
+        currentId += 1;
+    }
+    document.getElementById("sprite").src = pokedex[currentId]["img"];
+    //clear previous types 
+    let typeDiv = document.getElementById("poke-types");
+    while (typeDiv.firstChild){
+        typeDiv.firstChild.remove();
+    }
+    // update types
+    let types = pokedex[currentId]["type"];
+    for (let i = 0; i < types.length; i++){
+        let type = document.createElement("span");
+        type.innerText = types[i]["type"]["name"].toUpperCase();
+        type.classList.add("type-box");
+        type.classList.add(types[i]["type"]["name"]);
+        typeDiv.append(type);
+        if (types.length == 2 && i == 0)
+            typeDiv.append("/");
+    }
+    //same as types for abilities
+    let abilityDiv = document.getElementById("poke-powers");
+    while (abilityDiv.firstChild){
+        abilityDiv.firstChild.remove();
+    }
+    let abilities = pokedex[currentId]["ability"];
+    for (let a = 0; a < abilities.length; a++){
+        let ability = document.createElement("span");
+        ability.innerText = abilities[a]["ability"]["name"].toUpperCase();
+        ability.classList.add("ability-box");
+        ability.classList.add(abilities[a]["ability"]["name"]);
+        abilityDiv.append(ability);
+        if ((abilities.length >= 2 && a == 0) || (abilities.length > 2 && a == 1)){
+            abilityDiv.append("/ \n");
+        }
+    }
+    // overwrites name based on selection
+    let monName = document.getElementById("poke-name");
+    monName.innerText = pokedex[currentId]["name"].toUpperCase();
 
+    //update description
+    document.getElementById("description").innerText = pokedex[currentId]["desc"];
+}
