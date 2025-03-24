@@ -440,7 +440,7 @@ window.onload = function(){
     }
 
     sprite = new Image();
-    sprite.src = "/Resources/maze_ghost.PNG" + "?" + new Date().getTime();
+    sprite.src = "/Resources/maze_ghost.PNG" ;
     sprite.setAttribute("crossOrigin", " ");
     sprite.onload = function(){
         sprite = changeBrightness(1.2, sprite);
@@ -450,7 +450,7 @@ window.onload = function(){
     }
 
     finishSprite = new Image();
-    finishSprite.src = "/Resources/maze_exit.PNG" + "?" + new Date().getTime();
+    finishSprite.src = "/Resources/maze_exit.PNG";
     finishSprite.setAttribute("crossOrigin", " ");
     finishSprite.onload = function(){
         finishSprite = changeBrightness(1.1, finishSprite);
